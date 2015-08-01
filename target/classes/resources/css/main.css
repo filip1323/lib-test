@@ -1,0 +1,31 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.bookeditor table .delete-button{
+    visibility: hidden;
+}
+.bookeditor table tr:hover .delete-button{
+    visibility: visible;
+}
+.split-underneath > *{
+    margin-right: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
