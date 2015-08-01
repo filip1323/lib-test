@@ -54,7 +54,7 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <div class="container">
-        <h1>Hello there.</h1>
+        <h1>Hello there.#{startvar}</h1>
         <p>Below, you can see action, that can be performed. In case you dont have required privileges or are not able to perform certain action at the moment, button should be disabled.</p>
         <p class="split-underneath">
             <a ng-disabled="!authenticated" class="btn btn-primary btn-lg" href="/book-editor" role="button">Add/edit/remove book &raquo;</a>
@@ -66,6 +66,9 @@
 </div>
 
 <div class="container" ng-controller="UserCtrl as uctrl">
+    <ul ng-model="books">
+        <li ng-repeat="p in books">{{p}}</li>
+    </ul>
 
     <hr/>
 

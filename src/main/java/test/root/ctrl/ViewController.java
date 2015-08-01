@@ -19,16 +19,17 @@ import test.root.entities.services.UserService;
 @Controller
 public class ViewController {
 
-    @Autowired
-    UserService service;
 
-    @RequestMapping(value={"/", "/login"})  String home() {
+    @RequestMapping(value={"/", "/login"})  ModelAndView home() {
         ModelAndView model = new ModelAndView();
         model.setViewName("homeView");
 
-//        service.create(User.Role.USER, "Filip", "Lukomski", "filip1323", "password");
-//        service.create(User.Role.USER,"Filip", "Nielukomski", "user", "password");
+        return model;
+    }
 
-        return "homeView";
+    @RequestMapping(value={"/book-editor"})  ModelAndView bookEditor() {
+        ModelAndView model = new ModelAndView();
+        model.setViewName("editorView");
+        return model;
     }
 }

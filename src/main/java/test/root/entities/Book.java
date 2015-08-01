@@ -8,9 +8,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "book")
 public class Book {
-    enum Status{
-        Available,
-        Unavailable
+    public enum Status{
+        AVAILABLE,
+        UNAVAILABLE
     }
 
     @Id
@@ -28,8 +28,28 @@ public class Book {
     private String isbn;
 
     @Column(name = "status", nullable = false)
+    @Enumerated(EnumType.STRING)
     private Status status;
 
+    public long getId() {
+        return id;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
 
     protected Book() {}
 

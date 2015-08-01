@@ -17,6 +17,26 @@ public class Service {
     @Column(name = "userId", nullable = false)
     private long userId;
 
+    public long getId() {
+        return id;
+    }
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public long getBookId() {
+        return bookId;
+    }
+
+    public long getStartTime() {
+        return startTime;
+    }
+
+    public long getEndTime() {
+        return endTime;
+    }
+
     @Column(name = "bookId", nullable = false)
     private long bookId;
 

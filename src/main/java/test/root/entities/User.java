@@ -1,5 +1,7 @@
 package test.root.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 
 /**
@@ -23,9 +25,11 @@ public class User {
     @Column(name = "lastname", nullable = false)
     private String lastname;
 
+    @JsonIgnore
     @Column(name = "login", nullable = false, unique = true)
     private String login;
 
+    @JsonIgnore
     @Column(name = "password", nullable = false)
     private String password;
 
