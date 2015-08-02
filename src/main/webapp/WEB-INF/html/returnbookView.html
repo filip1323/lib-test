@@ -87,7 +87,7 @@
                     </tr>
 
                     <tr ng-repeat="book in books | filter:searchquery | orderBy :'timeleft'">
-                        <td>{{book.title}}</td><td>{{book.author}}</td><td>{{book.isbn}}</td><td>{{returnctrl.parseTimeleft(book.timeleft)}} <a class="btn btn-success btn-sm pull-right" href="#" ng-click="returnctrl.returnBook($index)" role="button">Return me!</a></td>
+                        <td>{{book.title}}</td><td>{{book.author}}</td><td>{{book.isbn}}</td><td>{{returnctrl.parseTimeleft(book.timeleft)}} <a class="btn btn-success btn-sm pull-right" href="#" ng-click="returnctrl.returnBook(book)" role="button">Return me!</a></td>
                     </tr>
                 </table>
             </div>

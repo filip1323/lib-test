@@ -120,7 +120,7 @@
                         <th>Title</th><th>Autor's name</th><th>ISBN</th>
                     </tr>
                     <tr ng-repeat="book in books | filter:searchquery | orderBy :'author'">
-                        <td>{{book.title}}</td><td>{{book.author}}</td><td>{{book.isbn}}<a class="btn btn-info btn-sm pull-right" href="#borrowbox" ng-click="servicectrl.borrowBook($index)" role="button">Borrow me!</a></td>
+                        <td>{{book.title}}</td><td>{{book.author}}</td><td>{{book.isbn}}<a class="btn btn-info btn-sm pull-right" href="#borrowbox" ng-click="servicectrl.borrowBook(book)" role="button">Borrow me!</a></td>
                     </tr>
                 </table>
             </div>

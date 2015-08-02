@@ -120,14 +120,15 @@ app.controller('MainCtrl', function($rootScope, $scope, $http, $location) {
         refreshBooks();
         $scope.servicePeriod = 7;
 
-        this.borrowBook = function(index){
-            $scope.book = $scope.books[index];
+        this.borrowBook = function(book){
+//            $scope.book = $scope.books[index];
+            $scope.book = book;
             $scope.book.index = index;
         }
 
         this.confirmBorrowBook = function(){
             postRequest("/rest/borrow-book/" + $scope.servicePeriod, $scope.book, function(){}, function(){});
-            $scope.books.splice($scope.book.index, 1);
+            $scope.books.splice($scope.books.indexOf($scope.book.index), 1);
             $scope.book = null;
         }
 
@@ -157,10 +158,9 @@ app.controller('MainCtrl', function($rootScope, $scope, $http, $location) {
         refreshBooks();
 
 
-        this.returnBook = function(index){
-            var book = $scope.books[index];
+        this.returnBook = function(book){
             postRequest("/rest/return-book", book, function(){}, function(){});
-            $scope.books.splice(index, 1);
+            $scope.books.splice($scope.books.indexOf(book), 1);
         }
 
     });

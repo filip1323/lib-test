@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d8b11a3-a360-404c-914e-9cebf4bb19cf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/test/root/entities/jsonextension/BookReturnJSON.java" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\.idea\libraries\Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_4.xml" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\.idea\libraries\Maven__com_fasterxml_jackson_core_jackson_core_2_5_4.xml" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\.idea\libraries\Maven__com_fasterxml_jackson_core_jackson_databind_2_5_4.xml" afterPath="" />
@@ -68,26 +67,8 @@
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\resources\test.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\test\root\entities\Book$Status.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\test\root\entities\BookForm.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/root/entities/Book.class" afterPath="$PROJECT_DIR$/target/classes/test/root/entities/Book.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/root/entities/BookRepository.class" afterPath="$PROJECT_DIR$/target/classes/test/root/entities/BookRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/root/entities/services/BookService.class" afterPath="$PROJECT_DIR$/target/classes/test/root/entities/services/BookService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/root/ctrl/RespondController.class" afterPath="$PROJECT_DIR$/target/classes/test/root/ctrl/RespondController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/root/entities/Service.class" afterPath="$PROJECT_DIR$/target/classes/test/root/entities/Service.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/root/entities/services/ServiceService.class" afterPath="$PROJECT_DIR$/target/classes/test/root/entities/services/ServiceService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/root/entities/User$Role.class" afterPath="$PROJECT_DIR$/target/classes/test/root/entities/User$Role.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/root/entities/User.class" afterPath="$PROJECT_DIR$/target/classes/test/root/entities/User.class" />
-      <change type="MODIFICATION" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\test\root\ctrl\ViewController.class" afterPath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\test\root\ctrl\ViewController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/root/entities/Book.java" afterPath="$PROJECT_DIR$/src/main/java/test/root/entities/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/root/entities/BookRepository.java" afterPath="$PROJECT_DIR$/src/main/java/test/root/entities/BookRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/root/entities/services/BookService.java" afterPath="$PROJECT_DIR$/src/main/java/test/root/entities/services/BookService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/root/ctrl/RespondController.java" afterPath="$PROJECT_DIR$/src/main/java/test/root/ctrl/RespondController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/root/entities/Service.java" afterPath="$PROJECT_DIR$/src/main/java/test/root/entities/Service.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/root/entities/services/ServiceService.java" afterPath="$PROJECT_DIR$/src/main/java/test/root/entities/services/ServiceService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/root/entities/User.java" afterPath="$PROJECT_DIR$/src/main/java/test/root/entities/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/root/ctrl/ViewController.class" afterPath="$PROJECT_DIR$/target/classes/test/root/ctrl/ViewController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/root/ctrl/ViewController.java" afterPath="$PROJECT_DIR$/src/main/java/test/root/ctrl/ViewController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/editorView.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/editorView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/homeView.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/homeView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/main.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/returnbookView.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/returnbookView.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/servicebookView.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/servicebookView.html" />
@@ -117,8 +98,8 @@
       <file leaf-file-name="servicebookView.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/servicebookView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.690909">
-              <caret line="121" column="32" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
+            <state vertical-scroll-proportion="-2.490909">
+              <caret line="122" column="185" selection-start-line="122" selection-start-column="185" selection-end-line="122" selection-end-column="185" />
               <folding />
             </state>
           </provider>
@@ -128,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/test/root/ctrl/ViewController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+              <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -147,8 +128,8 @@
       <file leaf-file-name="returnbookView.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/returnbookView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61748636">
-              <caret line="79" column="59" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.33179724">
+              <caret line="83" column="62" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -167,8 +148,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
+            <state vertical-scroll-proportion="-3.9655173">
+              <caret line="162" column="57" selection-start-line="162" selection-start-column="57" selection-end-line="162" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -241,12 +222,12 @@
         <option value="$PROJECT_DIR$/src/main/java/test/root/entities/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/root/entities/jsonextension/BookReturnJSON.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/root/ctrl/RespondController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/root/ctrl/ViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/homeView.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/editorView.html" />
+        <option value="$PROJECT_DIR$/src/main/java/test/root/ctrl/ViewController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/servicebookView.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/returnbookView.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" />
       </list>
     </option>
   </component>
@@ -913,7 +894,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21895425" sideWeight="0.48480242" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.50980395" sideWeight="0.48480242" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2530395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1319,22 +1300,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/root/ctrl/ViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/homeView.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.9404762">
@@ -1353,16 +1318,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/servicebookView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.690909">
-          <caret line="121" column="32" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
+        <state vertical-scroll-proportion="-2.490909">
+          <caret line="122" column="185" selection-start-line="122" selection-start-column="185" selection-end-line="122" selection-end-column="185" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/root/ctrl/ViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9655173">
+          <caret line="162" column="57" selection-start-line="162" selection-start-column="57" selection-end-line="162" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/returnbookView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61748636">
-          <caret line="79" column="59" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.33179724">
+          <caret line="83" column="62" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="62" />
           <folding />
         </state>
       </provider>

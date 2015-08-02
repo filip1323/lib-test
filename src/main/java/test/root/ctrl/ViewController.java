@@ -33,7 +33,7 @@ public class ViewController {
         model.setViewName("homeView");
 
         //userService.create(User.Role.USER,"Jakub", "Marciniak", "jakub", "dupa.8");
-        System.out.println(serviceService.getAllService());
+        if(userService.getUserByLogin("jakub")==null) userService.create(User.Role.USER,"Jakub", "Marciniak", "jakub", "dupa.8");;;
         return model;
     }
 
