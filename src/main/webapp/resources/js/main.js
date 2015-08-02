@@ -70,7 +70,7 @@ app.controller('MainCtrl', function($rootScope, $scope, $http, $location) {
       $scope.books = [];
 
       refreshBooks = function(){
-          postRequest("/rest/get-books", [], function(data){$scope.books=data}, function(){console.log("fail")});
+          postRequest("/rest/get-available-books", [], function(data){$scope.books=data}, function(){console.log("fail")});
       }
 
       refreshBooks();
@@ -118,12 +118,21 @@ app.controller('MainCtrl', function($rootScope, $scope, $http, $location) {
         }
 
         refreshBooks();
-
+        $scope.servicePeriod = 7;
 
         this.borrowBook = function(index){
-            var book = $scope.books[index];
-            postRequest("/rest/borrow-book", book, function(){}, function(){});
-            $scope.books.splice(index, 1);
+            $scope.book = $scope.books[index];
+            $scope.book.index = index;
+        }
+
+        this.confirmBorrowBook = function(){
+            postRequest("/rest/borrow-book/" + $scope.servicePeriod, $scope.book, function(){}, function(){});
+            $scope.books.splice($scope.book.index, 1);
+            $scope.book = null;
+        }
+
+        this.resign = function(){
+            $scope.book = null;
         }
 
 }).controller('ReturnBookCtrl', function($rootScope, $scope, $http, $location, $timeout) {
@@ -138,9 +147,13 @@ app.controller('MainCtrl', function($rootScope, $scope, $http, $location) {
         $scope.books = [];
 
         refreshBooks = function(){
-            getRequest("/rest/get-borrowed-books", [], function(data){$scope.books=data}, function(){console.log("fail")});
+            getRequest("/rest/get-borrowed-books", [], function(data){$scope.books=data; console.log($scope.books)}, function(){console.log("fail")});
         }
 
+        this.parseTimeleft = function(timeleft){
+
+            return Math.floor(timeleft/(24*60*60*1000)) + (timeleft < 2 ? " day" : " days");
+        }
         refreshBooks();
 
 

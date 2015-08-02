@@ -11,6 +11,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import test.root.entities.User;
 import test.root.entities.UserRepository;
+import test.root.entities.services.ServiceService;
 import test.root.entities.services.UserService;
 
 /**
@@ -23,13 +24,16 @@ public class ViewController {
     @Autowired
     UserService userService;
 
+    @Autowired
+    ServiceService serviceService;
+
 
     @RequestMapping(value={"/", "/login"})  ModelAndView home() {
         ModelAndView model = new ModelAndView();
         model.setViewName("homeView");
 
-        //userService.create(User.Role.ADMIN,"Filip", "Lukomski", "filip1323", "password");
-
+        //userService.create(User.Role.USER,"Jakub", "Marciniak", "jakub", "dupa.8");
+        System.out.println(serviceService.getAllService());
         return model;
     }
 

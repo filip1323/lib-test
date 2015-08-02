@@ -59,8 +59,8 @@
         <p class="split-underneath">
             <a ng-disabled="!authenticated" class="btn btn-primary btn-lg" href="/book-editor" role="button">Add/edit/remove book &raquo;</a>
             <a ng-disabled="!authenticated" class="btn btn-primary btn-lg" href="/service-book" role="button">Borrow book &raquo;</a>
-            <a ng-disabled="!authenticated || main.user.booksBorrowed.length == 0" class="btn btn-primary btn-lg" href="/return-book" role="button">Return book &raquo;</a>
-            <a ng-controller="UserCtrl" ng-disabled="user.role != 'ADMIN'"disabled class="btn btn-primary btn-lg" href="/check-service" role="button">Check service status &raquo;</a>
+            <a ng-disabled="!authenticated" class="btn btn-primary btn-lg" href="/return-book" role="button">Return book &raquo;</a>
+            <a disabled class="btn btn-primary btn-lg" href="/check-service" role="button">Check service status &raquo;</a>
         </p>
     </div>
 </div>

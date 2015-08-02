@@ -3,13 +3,14 @@ package test.root.entities;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Created by Filip on 2015-07-31.
  */
 @Entity
 @Table(name = "user")
-public class User {
+public class User{
     public enum Role {
         USER, ADMIN
     }

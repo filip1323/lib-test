@@ -14,19 +14,29 @@ public class Service {
     @Column(name = "id", nullable = false, updatable = false)
     private long id;
 
-    @Column(name = "userId", nullable = false)
-    private long userId;
+    @Column(name = "start_time", nullable = false)
+    private long startTime;
+
+    @Column(name = "end_time", nullable = false)
+    private long endTime;
+
+    @OneToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="user_id")
+    private User user;
+
+    @OneToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="book_id")
+    private Book book;
+
+    public Service(long startTime, long endTime, User user, Book book) {
+        this.startTime = startTime;
+        this.endTime = endTime;
+        this.user = user;
+        this.book = book;
+    }
 
     public long getId() {
         return id;
-    }
-
-    public long getUserId() {
-        return userId;
-    }
-
-    public long getBookId() {
-        return bookId;
     }
 
     public long getStartTime() {
@@ -37,32 +47,24 @@ public class Service {
         return endTime;
     }
 
-    @Column(name = "bookId", nullable = false)
-    private long bookId;
+    public User getUser() {
+        return user;
+    }
 
-    @Column(name = "startTime", nullable = false)
-    private long startTime;
-
-    @Column(name = "endTime", nullable = false)
-    private long endTime;
+    public Book getBook() {
+        return book;
+    }
 
     protected Service(){}
-
-    public Service(long userId, long bookId, long startTime, long endTime) {
-        this.userId = userId;
-        this.bookId = bookId;
-        this.startTime = startTime;
-        this.endTime = endTime;
-    }
 
     @Override
     public String toString() {
         return "Service{" +
                 "id=" + id +
-                ", userId=" + userId +
-                ", bookId=" + bookId +
                 ", startTime=" + startTime +
                 ", endTime=" + endTime +
+                ", user=" + user +
+                ", book=" + book +
                 '}';
     }
 }

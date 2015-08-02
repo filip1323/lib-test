@@ -11,9 +11,9 @@ import java.util.List;
 public interface BookRepository extends CrudRepository<Book, Long> {
     Book findOneById(long id);
     Book findOneByIsbn(String isbn);
-    @Query(value = "SELECT * FROM book WHERE book.id NOT IN (SELECT book_id FROM service)", nativeQuery = true)
+    @Query(value = "SELECT * FROM book WHERE book.book_id NOT IN (SELECT book_id FROM service)", nativeQuery = true)
     List<Book> findAvailableBooks();
 
-    @Query(value = "SELECT * FROM book WHERE book.id IN (SELECT book_id FROM service WHERE user_id = ?1)", nativeQuery = true)
+    @Query(value = "SELECT * FROM book WHERE book.book_id IN (SELECT book_id FROM service WHERE user_id = ?1)", nativeQuery = true)
     List<Book> findUnavailableBooks(long userid);
 }

@@ -59,8 +59,8 @@ public class BookService {
         return bookRepository.findOneByIsbn(isbn);
     }
 
-    public Book create(String author, String title, String ISBN, Book.Status status) {
-        return bookRepository.save(new Book(author, title, ISBN, status));
+    public Book create(String author, String title, String ISBN) {
+        return bookRepository.save(new Book(author, title, ISBN));
     }
 
     public Book update(Book newBook){

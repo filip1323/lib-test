@@ -5,7 +5,9 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import test.root.entities.Book;
+import test.root.entities.Service;
 import test.root.entities.User;
+import test.root.entities.jsonextension.BookReturnJSON;
 import test.root.entities.services.BookService;
 import test.root.entities.services.ServiceService;
 import test.root.entities.services.UserService;
@@ -13,6 +15,7 @@ import test.root.entities.services.UserService;
 import java.security.Principal;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 
 
 /**
@@ -60,7 +63,7 @@ public class RespondController {
 
     @RequestMapping(value = "/rest/add-book", method = RequestMethod.POST)
     public long addBook(@RequestBody Book book) {
-        return bookService.create(book.getAuthor(), book.getTitle(), book.getIsbn(), Book.Status.AVAILABLE).getId();
+        return bookService.create(book.getAuthor(), book.getTitle(), book.getIsbn()).getId();
     }
 
     @RequestMapping(value = "/rest/update-book", method = RequestMethod.POST)
@@ -81,9 +84,11 @@ public class RespondController {
         return bookService.getAvailableBooks();
     }
 
-    @RequestMapping(value = "/rest/borrow-book", method = RequestMethod.POST)
-    public void borrowBook(@RequestBody Book book) {
-        serviceService.create(getUser().getId(),book.getId(), 0, 0);
+    @RequestMapping(value = "/rest/borrow-book/{period}", method = RequestMethod.POST)
+    public void borrowBook(@RequestBody Book book, @PathVariable long period) {
+        long currentTime = new Date().getTime();
+        long endTime = currentTime + period*1000*60*60*24;
+        serviceService.create(currentTime, endTime, getUser(),bookService.getBookById(book.getId()));
     }
 
 
@@ -91,9 +96,13 @@ public class RespondController {
 
     //RETURN BOOK//
 
-    @RequestMapping(value = "/rest/get-borrowed-books", method = RequestMethod.GET) Collection<Book> getBorrowedBooks(){
-        return bookService.getBorrowedBooks(getUser().getId());
-//        return new ArrayList<Book>();
+    @RequestMapping(value = "/rest/get-borrowed-books", method = RequestMethod.GET) Collection<BookReturnJSON> getBorrowedBooks(){
+        ArrayList<BookReturnJSON> books = new ArrayList<BookReturnJSON>();
+        for(Service service : serviceService.getServiceByUserId(getUser().getId())){
+            long timeleft = service.getEndTime() - new Date().getTime();
+            books.add(new BookReturnJSON(service.getBook(), timeleft));
+        }
+        return books;
     }
 
     @RequestMapping(value = "/rest/return-book", method = RequestMethod.POST)

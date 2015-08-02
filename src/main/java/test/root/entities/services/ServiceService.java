@@ -1,10 +1,7 @@
 package test.root.entities.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import test.root.entities.Book;
-import test.root.entities.BookRepository;
-import test.root.entities.Service;
-import test.root.entities.ServiceRepository;
+import test.root.entities.*;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -23,7 +20,7 @@ public class ServiceService {
         this.serviceRepository = serviceRepository;
     }
 
-    public Collection<Service> getAllBooks() {
+    public Collection<Service> getAllService() {
         //TODO encapsulate
         Collection<Service> list = new ArrayList<Service>();
         for (Service item : serviceRepository.findAll()) {
@@ -43,8 +40,8 @@ public class ServiceService {
         return serviceRepository.findByUserId(id);
     }
 
-    public Service create(long userId, long bookId, long startTime, long endTime) {
-        return serviceRepository.save(new Service(userId, bookId, startTime, endTime));
+    public Service create(long startTime, long endTime, User user, Book book) {
+        return serviceRepository.save(new Service(startTime, endTime, user, book));
     }
 
     public void returnBook(Book book){
