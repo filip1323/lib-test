@@ -20,9 +20,15 @@ import test.root.entities.services.UserService;
 public class ViewController {
 
 
+    @Autowired
+    UserService userService;
+
+
     @RequestMapping(value={"/", "/login"})  ModelAndView home() {
         ModelAndView model = new ModelAndView();
         model.setViewName("homeView");
+
+        //userService.create(User.Role.ADMIN,"Filip", "Lukomski", "filip1323", "password");
 
         return model;
     }
@@ -30,6 +36,21 @@ public class ViewController {
     @RequestMapping(value={"/book-editor"})  ModelAndView bookEditor() {
         ModelAndView model = new ModelAndView();
         model.setViewName("editorView");
+        return model;
+    }
+    @RequestMapping(value={"/service-book"})  ModelAndView bookService() {
+        ModelAndView model = new ModelAndView();
+        model.setViewName("servicebookView");
+        return model;
+    }
+    @RequestMapping(value={"/check-service"})  ModelAndView checkService() {
+        ModelAndView model = new ModelAndView();
+        model.setViewName("checkserviceView");
+        return model;
+    }
+    @RequestMapping(value={"/return-book"})  ModelAndView returnBook() {
+        ModelAndView model = new ModelAndView();
+        model.setViewName("returnbookView");
         return model;
     }
 }

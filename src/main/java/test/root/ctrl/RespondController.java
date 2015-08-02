@@ -7,9 +7,11 @@ import org.springframework.web.bind.annotation.*;
 import test.root.entities.Book;
 import test.root.entities.User;
 import test.root.entities.services.BookService;
+import test.root.entities.services.ServiceService;
 import test.root.entities.services.UserService;
 
 import java.security.Principal;
+import java.util.ArrayList;
 import java.util.Collection;
 
 
@@ -26,6 +28,9 @@ public class RespondController {
     @Autowired
     BookService bookService;
 
+    @Autowired
+    ServiceService serviceService;
+
     @RequestMapping("/user")
     public Principal user(Principal user) {
         return user;
@@ -39,7 +44,13 @@ public class RespondController {
         return userService.getUserByLogin(name);
     }
 
+    //ADD EDIT REMOVE BOOK//
+
     @RequestMapping(value = "/rest/get-books", method = RequestMethod.POST) Collection<Book> getBooks(){
+        return bookService.getAllBooks();
+    }
+    //TODO
+    @RequestMapping(value = "/rest/get-book", method = RequestMethod.POST) Collection<Book> getBook(){
         return bookService.getAllBooks();
     }
     //TODO DELETE
@@ -48,12 +59,45 @@ public class RespondController {
     }
 
     @RequestMapping(value = "/rest/add-book", method = RequestMethod.POST)
-    public void addBook(@RequestBody Book bookForm) {
-        bookService.create(bookForm.getAuthor(), bookForm.getTitle(), bookForm.getIsbn(), Book.Status.AVAILABLE);
+    public long addBook(@RequestBody Book book) {
+        return bookService.create(book.getAuthor(), book.getTitle(), book.getIsbn(), Book.Status.AVAILABLE).getId();
+    }
+
+    @RequestMapping(value = "/rest/update-book", method = RequestMethod.POST)
+    public Book updateBook(@RequestBody Book book) {
+        return bookService.update(book);
     }
 
     @RequestMapping(value = "/rest/remove-book/{bookId}", method = RequestMethod.GET)
     public void removeBook(@PathVariable int bookId) {
         bookService.delete(bookService.getBookById(bookId));
+    }
+
+    //!ADD EDIT REMOVE BOOK//
+
+    //SERVICE BOOK//
+
+    @RequestMapping(value = "/rest/get-available-books", method = RequestMethod.POST) Collection<Book> getAvailableBooks(){
+        return bookService.getAvailableBooks();
+    }
+
+    @RequestMapping(value = "/rest/borrow-book", method = RequestMethod.POST)
+    public void borrowBook(@RequestBody Book book) {
+        serviceService.create(getUser().getId(),book.getId(), 0, 0);
+    }
+
+
+    //!SERVICE BOOK//
+
+    //RETURN BOOK//
+
+    @RequestMapping(value = "/rest/get-borrowed-books", method = RequestMethod.GET) Collection<Book> getBorrowedBooks(){
+        return bookService.getBorrowedBooks(getUser().getId());
+//        return new ArrayList<Book>();
+    }
+
+    @RequestMapping(value = "/rest/return-book", method = RequestMethod.POST)
+    public void returnBook(@RequestBody Book book) {
+        serviceService.returnBook(bookService.getBookById(book.getId()));
     }
 }

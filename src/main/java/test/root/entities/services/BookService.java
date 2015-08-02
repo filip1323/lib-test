@@ -33,6 +33,23 @@ public class BookService {
         return list;
     }
 
+    public Collection<Book> getAvailableBooks() {
+        //TODO encapsulate
+        Collection<Book> list = new ArrayList<Book>();
+        for (Book item : bookRepository.findAvailableBooks()) {
+            list.add(item);
+        }
+        return list;
+    }
+    public Collection<Book> getBorrowedBooks(long id) {
+        //TODO encapsulate
+        Collection<Book> list = new ArrayList<Book>();
+        for (Book item : bookRepository.findUnavailableBooks(id)) {
+            list.add(item);
+        }
+        return list;
+    }
+
 
     public Book getBookById(long id) {
         return bookRepository.findOne(id);
@@ -43,7 +60,15 @@ public class BookService {
     }
 
     public Book create(String author, String title, String ISBN, Book.Status status) {
-        return bookRepository.save(new Book( author,  title,  ISBN,  status));
+        return bookRepository.save(new Book(author, title, ISBN, status));
+    }
+
+    public Book update(Book newBook){
+        Book oldBook = getBookById(newBook.getId());
+        oldBook.setAuthor(newBook.getAuthor());
+        oldBook.setIsbn(newBook.getIsbn());
+        oldBook.setTitle(newBook.getTitle());
+        return bookRepository.save(oldBook);
     }
 
     public void delete(Book book){

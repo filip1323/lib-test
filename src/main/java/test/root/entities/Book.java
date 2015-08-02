@@ -51,6 +51,24 @@ public class Book {
         return status;
     }
 
+    public String getTimeleft(){return null;}//TODO timeleft book
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
     protected Book() {}
 
     public Book(String author, String title, String ISBN, Status status) {
