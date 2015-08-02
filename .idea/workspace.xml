@@ -67,12 +67,7 @@
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\resources\test.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\test\root\entities\Book$Status.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\test\root\entities\BookForm.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/root/ctrl/ViewController.class" afterPath="$PROJECT_DIR$/target/classes/test/root/ctrl/ViewController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/root/ctrl/ViewController.java" afterPath="$PROJECT_DIR$/src/main/java/test/root/ctrl/ViewController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/returnbookView.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/returnbookView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/servicebookView.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/servicebookView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lib-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -125,10 +120,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="returnbookView.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="returnbookView.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/returnbookView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33179724">
+            <state vertical-scroll-proportion="-1.3090909">
               <caret line="83" column="62" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="62" />
               <folding />
             </state>
@@ -145,11 +140,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9655173">
-              <caret line="162" column="57" selection-start-line="162" selection-start-column="57" selection-end-line="162" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.3787234">
+              <caret line="119" column="41" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -1332,18 +1327,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/returnbookView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9655173">
-          <caret line="162" column="57" selection-start-line="162" selection-start-column="57" selection-end-line="162" selection-end-column="57" />
+        <state vertical-scroll-proportion="-1.3090909">
+          <caret line="83" column="62" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/returnbookView.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33179724">
-          <caret line="83" column="62" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.3787234">
+          <caret line="119" column="41" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
           <folding />
         </state>
       </provider>

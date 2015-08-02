@@ -9,13 +9,10 @@ app.controller('MainCtrl', function($rootScope, $scope, $http, $location) {
 
 
         $http.post('/user', {headers : headers}).success(function(data) {
-        console.log(data);
           if (data.name) {
             $rootScope.authenticated = true;
-              console.log("authenticated");
           } else {
             $rootScope.authenticated = false;
-              console.log(":(");
           }
           callback && callback();
         }).error(function() {
@@ -56,7 +53,7 @@ app.controller('MainCtrl', function($rootScope, $scope, $http, $location) {
         $http.get(url, dataToSend).success(onSucces).error(onError);
     }
 
-    postRequest("/rest/get-logged-user", [], function(data){$scope.user=data; console.log($scope.user)}, function(){console.log("fail")});
+    postRequest("/rest/get-logged-user", [], function(data){$scope.user=data;}, function(){});
 
 }).controller('EditBookCtrl', function($rootScope, $scope, $http, $location, $timeout) {
       //TODO accept null vars
@@ -70,14 +67,14 @@ app.controller('MainCtrl', function($rootScope, $scope, $http, $location) {
       $scope.books = [];
 
       refreshBooks = function(){
-          postRequest("/rest/get-available-books", [], function(data){$scope.books=data}, function(){console.log("fail")});
+          postRequest("/rest/get-available-books", [], function(data){$scope.books=data}, function(){});
       }
 
       refreshBooks();
 
       this.addBook = function(){
           //TODO data validation
-          console.log($scope.book);
+
           postRequest("/rest/add-book", $scope.book, function(data){$scope.book.id = data; $scope.books.push($scope.book); $scope.book = {}}, function(){} );
 
       };
@@ -114,21 +111,19 @@ app.controller('MainCtrl', function($rootScope, $scope, $http, $location) {
         $scope.books = [];
 
         refreshBooks = function(){
-            postRequest("/rest/get-available-books", [], function(data){$scope.books=data}, function(){console.log("fail")});
+            postRequest("/rest/get-available-books", [], function(data){$scope.books=data}, function(){});
         }
 
         refreshBooks();
         $scope.servicePeriod = 7;
 
         this.borrowBook = function(book){
-//            $scope.book = $scope.books[index];
             $scope.book = book;
-            $scope.book.index = index;
         }
 
         this.confirmBorrowBook = function(){
             postRequest("/rest/borrow-book/" + $scope.servicePeriod, $scope.book, function(){}, function(){});
-            $scope.books.splice($scope.books.indexOf($scope.book.index), 1);
+            $scope.books.splice($scope.books.indexOf($scope.book), 1);
             $scope.book = null;
         }
 
@@ -148,7 +143,7 @@ app.controller('MainCtrl', function($rootScope, $scope, $http, $location) {
         $scope.books = [];
 
         refreshBooks = function(){
-            getRequest("/rest/get-borrowed-books", [], function(data){$scope.books=data; console.log($scope.books)}, function(){console.log("fail")});
+            getRequest("/rest/get-borrowed-books", [], function(data){$scope.books=data; }, function(){});
         }
 
         this.parseTimeleft = function(timeleft){
