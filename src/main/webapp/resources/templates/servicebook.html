@@ -22,8 +22,8 @@
         <h3  ng-show="!books.length">No books left in library!</h3>
     </div>
     <div id="borrowbox" class="row" ng-show="book" >
-        <div class="col-md-4">
-            <form role="form" class="book-to-borrow">
+        <div class="col-md-offset-4 col-md-4 panel panel-default">
+            <form role="form" class="panel-body">
                 <h3>Are you sure?</h3>
                 <hr/>
                 <p>Title: {{book.title}}</p>
@@ -31,6 +31,12 @@
                 <p>ISBN: {{book.isbn}}</p>
                 <hr/>
                 <p>How long are you going to keep it?</p>
+                <div class="radio">
+                    <label><input type="radio" name="period" value="-10"  ng-model="servicePeriod">-10 days[debug]</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="period" value="7"  ng-model="servicePeriod">1 day</label>
+                </div>
                 <div class="radio">
                     <label><input type="radio" name="period" value="7"  ng-model="servicePeriod">7 days</label>
                 </div>

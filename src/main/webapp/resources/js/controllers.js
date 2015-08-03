@@ -132,7 +132,11 @@ appControllers.controller('MainCtrl', function($rootScope, $scope, $http, $locat
     }
 
     this.parseTimeleft = function(timeleft){
-        return Math.floor(timeleft/(24*60*60*1000)) + (timeleft < 2 && timeleft >= 1 ? " day" : " days");
+        return Math.round(timeleft/(24*60*60*1000)) + (timeleft < 2 && timeleft >= 1 ? " day" : " days");
+    }
+
+    this.getReturnButtonClass = function(timeleft){
+        return (timeleft/(24*60*60*1000) > 0) ? "success" : "danger";
     }
 
     refreshBooks();
