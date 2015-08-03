@@ -1,33 +1,33 @@
-<div class="row bookeditor" ng-controller="EditBookCtrl as editctrl">
-    <h2>Add/edit/remove book</h2>
-    <hr/>
-    <div class="col-md-4">
-        <!-- ng-submit="editctrl.addBook()"-->
-        <form  role="form" >
-            <div class="form-group">
-                <input type="text" placeholder="Title" class="form-control" ng-model="book.title">
-            </div>
-            <div class="form-group">
-                <input type="text" placeholder="Author's name" class="form-control" ng-model="book.author">
-            </div>
-            <div class="form-group">
-                <input type="text" placeholder="ISBN" class="form-control"  ng-model="book.isbn">
-            </div>
-            <button ng-show="book.id == null"type="submit" class="btn btn-success" ng-click="editctrl.addBook()">Add</button>
-            <button ng-show="book.id != null" type="submit" class="btn btn-success" ng-click="editctrl.updateBook()">Edit</button>
-            <button ng-show="book.id != null" type="submit" class="btn btn-danger" ng-click="editctrl.stopEdit()">Stop edit</button>
-        </form>
-    </div>
-    <div class="col-md-8">
-        <table class="table table-striped table-bordered table-hover">
-            <tr>
-                <th>Title</th><th>Autor's name</th><th>ISBN</th>
-            </tr>
-            <tr ng-repeat="book in books">
-                <td>{{book.title}}</td><td>{{book.author}}</td><td>{{book.isbn}}<a class="btn btn-info btn-sm delete-button pull-right" href="" ng-click="editctrl.editBook(book)" role="button">Edit</a><a class="btn btn-danger btn-sm delete-button pull-right" href="" ng-click="editctrl.removeBook(book)" role="button">Remove</a></td>
-            </tr>
+<div class="row bookeditor">
+<h2>Add/edit/remove book</h2>
+<hr/>
+<div class="col-md-4">
+    <!-- ng-submit="editctrl.addBook()"-->
+    <form  role="form" >
+        <div class="form-group">
+            <input type="text" placeholder="Title" class="form-control" ng-model="book.title">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Author's name" class="form-control" ng-model="book.author">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="ISBN" class="form-control"  ng-model="book.isbn">
+        </div>
+        <button ng-show="book.id == null"type="submit" class="btn btn-success" ng-click="editctrl.addBook()">Add</button>
+        <button ng-show="book.id != null" type="submit" class="btn btn-success" ng-click="editctrl.updateBook()">Edit</button>
+        <button ng-show="book.id != null" type="submit" class="btn btn-danger" ng-click="editctrl.stopEdit()">Stop edit</button>
+    </form>
+</div>
+<div class="col-md-8">
+    <table class="table table-striped table-bordered table-hover">
+        <tr>
+            <th>Title</th><th>Autor's name</th><th>ISBN</th>
+        </tr>
+        <tr ng-repeat="book in books">
+            <td>{{book.title}}</td><td>{{book.author}}</td><td>{{book.isbn}}<a class="btn btn-info btn-sm delete-button pull-right" href="" ng-click="editctrl.editBook(book)" role="button">Edit</a><a class="btn btn-danger btn-sm delete-button pull-right" href="" ng-click="editctrl.removeBook(book)" role="button">Remove</a></td>
+        </tr>
 
 
-        </table>
-    </div>
+    </table>
+</div>
 </div>

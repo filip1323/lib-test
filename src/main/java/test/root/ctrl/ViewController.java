@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import test.root.entities.Service;
 import test.root.entities.User;
 import test.root.entities.UserRepository;
 import test.root.entities.services.ServiceService;
@@ -28,7 +29,7 @@ public class ViewController {
     ServiceService serviceService;
 
 
-    @RequestMapping(value={"/", "/login", "/book-editor", "/service-book", "/check-service", "/return-book"})  ModelAndView home() {
+    @RequestMapping(value={"/", "/login"})  ModelAndView home() {
         ModelAndView model = new ModelAndView();
         model.setViewName("homeView");
 

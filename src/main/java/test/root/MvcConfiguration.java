@@ -32,11 +32,11 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/resources/**")
                 .addResourceLocations("/resources/");
-        registry.addResourceHandler("/assets/**").addResourceLocations("classpath:/META-INF/resources/webjars/").setCachePeriod(31556926);
-        registry.addResourceHandler("/css/**").addResourceLocations("/resources/css/").setCachePeriod(31556926);
-        registry.addResourceHandler("/img/**").addResourceLocations("/resources/img/").setCachePeriod(31556926);
-        registry.addResourceHandler("/js/**").addResourceLocations("/resources/js/").setCachePeriod(31556926);
-        registry.addResourceHandler("/templates/**").addResourceLocations("/resources/templates/").setCachePeriod(31556926);
+        registry.addResourceHandler("/assets/**").addResourceLocations("classpath:/META-INF/resources/webjars/").setCachePeriod(0);
+        registry.addResourceHandler("/css/**").addResourceLocations("/resources/css/").setCachePeriod(0);
+        registry.addResourceHandler("/img/**").addResourceLocations("/resources/img/").setCachePeriod(0);
+        registry.addResourceHandler("/js/**").addResourceLocations("/resources/js/").setCachePeriod(0);
+        registry.addResourceHandler("/templates/**").addResourceLocations("/resources/templates/").setCachePeriod(0);
     }
 
     @Override

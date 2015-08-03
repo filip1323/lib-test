@@ -142,4 +142,41 @@ appControllers.controller('MainCtrl', function($rootScope, $scope, $http, $locat
         $scope.appData.postRequest("/rest/return-book", book, function(){}, function(){});
         $scope.books.splice($scope.books.indexOf(book), 1);
     }
+}).controller('CheckServiceCtrl', function($rootScope, $scope, $http, $location, $timeout) {
+    $scope.services = [];
+
+    refreshServices = function(){
+        $scope.appData.getRequest("/rest/get-all-services", [], function(data){$scope.services=parseServices(data); console.log($scope.services)}, function(){});
+    }
+
+    Date.prototype.getMyDateFormat = function(){
+        return this.getFullYear() + "-" + ((this.getMonth() < 9) ? "0" : "") + (this.getMonth()+1) + "-" + ((this.getDate() < 10) ? "0" : "") + this.getDate();
+    }
+
+    parseServices = function(data){
+        var newData = [];
+        for(var i = 0 ; i < data.length; i++){
+            newData.push(new Service(data[i]));
+        }
+        return newData;
+    }
+
+    function Service(data) {
+       this.user = data.user;
+       this.book = data.book;
+       this.startTime = new Date(data.startTime).getMyDateFormat();
+       this.endTime = new Date(data.endTime).getMyDateFormat();
+    }
+
+    Service.prototype.fullName = function() {
+       return this.user.firstname + " " + this.user.lastname;
+    }
+
+//    this.parseTimeleft = function(timeleft){
+//        return Math.floor(timeleft/(24*60*60*1000)) + (timeleft < 2 && timeleft >= 1 ? " day" : " days");
+//    }
+
+    refreshServices();
+
+
 });

@@ -109,4 +109,13 @@ public class RespondController {
     public void returnBook(@RequestBody Book book) {
         serviceService.returnBook(bookService.getBookById(book.getId()));
     }
+
+    //!RETURN BOOK//
+
+    //SERVICE CHECK//
+
+
+    @RequestMapping(value = "/rest/get-all-services", method = RequestMethod.GET) Collection<Service> getAllServices(){
+        return serviceService.getAllService();
+    }
 }

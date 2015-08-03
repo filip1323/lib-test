@@ -8,15 +8,19 @@ app.config(['$routeProvider',
     $routeProvider.
       when('/book-editor', {
         templateUrl: 'templates/bookeditor.html',
-        //controller: 'MainCtrl'
+        controller: 'EditBookCtrl as editctrl'
       }).
       when('/service-book', {
         templateUrl: 'templates/servicebook.html',
-        //controller: 'MainCtrl'
+        controller: 'BookServiceCtrl as servicectrl'
       }).
       when('/return-book', {
         templateUrl: 'templates/returnbook.html',
-        //controller: 'MainCtrl'
+        controller: 'ReturnBookCtrl as returnctrl'
+      }).
+      when('/check-service', {
+        templateUrl: 'templates/checkservice.html',
+        controller: 'CheckServiceCtrl'
       }).
       otherwise({
         redirectTo: '/'

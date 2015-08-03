@@ -1,10 +1,13 @@
 package test.root.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 
 /**
  * Created by Filip on 2015-07-31.
  */
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @Entity
 @Table(name = "service")
 public class Service {

@@ -5,7 +5,7 @@
         <div class="col-md-12">
             <form  role="form">
                 <div class="form-group">
-                    <input type="text" placeholder="Search" class="form-control">
+                    <input type="text" placeholder="Search" class="form-control"  ng-model="searchquery">
                 </div>
             </form>
         </div>
@@ -17,14 +17,8 @@
                     <th>Customer name</th><th>ISBN</th><th>Borrowed</th><th>Returns</th>
                 </tr>
 
-                <tr>
-                    <td>Alfreds Futterkiste</td><td>43-434-5345-342</td><td>12-07-15</td><td>21-08-15</td>
-                </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td><td>43-434-5345-342</td><td>12-07-15</td><td>21-08-15</td>
-                </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td><td>43-434-5345-342</td><td>12-07-15</td><td>21-08-15</td>
+                <tr ng-repeat="service in services | filter:searchquery">
+                    <td>{{service.user.firstname + ' ' + service.user.lastname}} </td><td>{{service.book.isbn}}</td><td>{{service.startTime}}</td><td>{{service.endTime}}</td>
                 </tr>
 
             </table>
