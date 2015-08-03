@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d8b11a3-a360-404c-914e-9cebf4bb19cf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/templates/bookeditor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/controllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/templates/returnbook.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/templates/servicebook.html" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\.idea\libraries\Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_4.xml" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\.idea\libraries\Maven__com_fasterxml_jackson_core_jackson_core_2_5_4.xml" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\.idea\libraries\Maven__com_fasterxml_jackson_core_jackson_databind_2_5_4.xml" afterPath="" />
@@ -39,14 +35,6 @@
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\src\main\resources\resources\js\vendor\modernizr-2.8.3-respond-1.4.2.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\src\main\resources\resources\js\vendor\npm.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\src\main\resources\resources\test.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\src\main\resources\templates\bookeditor.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\src\main\resources\templates\homeView.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\src\main\resources\templates\returnbook.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\src\main\resources\templates\servicebook.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\src\main\webapp\WEB-INF\html\template\bookeditor.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\src\main\webapp\WEB-INF\html\template\checkservice.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\src\main\webapp\WEB-INF\html\template\returnbook.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\src\main\webapp\WEB-INF\html\template\servicebook.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\resources\css\bootstrap-theme.css" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\resources\css\bootstrap-theme.css.map" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\resources\css\bootstrap-theme.min.css" afterPath="" />
@@ -77,16 +65,15 @@
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\resources\js\vendor\modernizr-2.8.3-respond-1.4.2.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\resources\js\vendor\npm.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\resources\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\templates\bookeditor.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\templates\checkservice.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\templates\homeView.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\templates\returnbook.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\templates\servicebook.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\test\root\entities\Book$Status.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\target\classes\test\root\entities\BookForm.class" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Filip\IdeaProjects\lib-test\src\main\resources\templates\checkservice.html" afterPath="$PROJECT_DIR$/src/main/webapp/resources/templates/checkservice.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/root/MvcConfiguration.class" afterPath="$PROJECT_DIR$/target/classes/test/root/MvcConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/root/ctrl/ViewController.class" afterPath="$PROJECT_DIR$/target/classes/test/root/ctrl/ViewController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/root/MvcConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/test/root/MvcConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/root/ctrl/ViewController.java" afterPath="$PROJECT_DIR$/src/main/java/test/root/ctrl/ViewController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/homeView.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/homeView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/templates/bookeditor.html" afterPath="$PROJECT_DIR$/src/main/webapp/resources/templates/bookeditor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/controllers.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lib-test.iws" />
@@ -123,8 +110,18 @@
       <file leaf-file-name="controllers.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58419245">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.3373287">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bookeditor.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/templates/bookeditor.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.615385">
+              <caret line="26" column="176" selection-start-line="26" selection-start-column="176" selection-end-line="26" selection-end-column="176" />
               <folding />
             </state>
           </provider>
@@ -264,7 +261,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -494,7 +491,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -727,7 +724,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -737,7 +734,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47875816" sideWeight="0.48480242" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47875816" sideWeight="0.48480242" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2530395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -776,6 +773,22 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/test/root/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1034,7 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21538462">
           <caret line="89" column="58" selection-start-line="89" selection-start-column="58" selection-end-line="89" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,7 +1054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.961538">
           <caret line="94" column="10" selection-start-line="68" selection-start-column="4" selection-end-line="94" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1050,7 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,7 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.1538463">
           <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="127" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1066,7 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45041323">
           <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="101" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,7 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="85" selection-start-line="38" selection-start-column="85" selection-end-line="38" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,7 +1089,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="135" selection-start-line="36" selection-start-column="135" selection-end-line="36" selection-end-column="135" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,7 +1096,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.7307692">
           <caret line="58" column="11" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,7 +1103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.581818">
           <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,15 +1110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/templates/bookeditor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.9615383">
-          <caret line="26" column="303" selection-start-line="26" selection-start-column="303" selection-end-line="26" selection-end-column="303" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,10 +1121,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/templates/bookeditor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.615385">
+          <caret line="26" column="176" selection-start-line="26" selection-start-column="176" selection-end-line="26" selection-end-column="176" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58419245">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.3373287">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -24,7 +24,7 @@
                 <th>Title</th><th>Autor's name</th><th>ISBN</th>
             </tr>
             <tr ng-repeat="book in books">
-                <td>{{book.title}}</td><td>{{book.author}}</td><td>{{book.isbn}}<a class="btn btn-info btn-sm delete-button pull-right" href="" ng-click="editctrl.editBook($index)" role="button">Edit</a><a class="btn btn-danger btn-sm delete-button pull-right" href="" ng-click="editctrl.removeBook(book)" role="button">Remove</a></td>
+                <td>{{book.title}}</td><td>{{book.author}}</td><td>{{book.isbn}}<a class="btn btn-info btn-sm delete-button pull-right" href="" ng-click="editctrl.editBook(book)" role="button">Edit</a><a class="btn btn-danger btn-sm delete-button pull-right" href="" ng-click="editctrl.removeBook(book)" role="button">Remove</a></td>
             </tr>
 
 
