@@ -1,0 +1,60 @@
+<div class="servicebook"  ng-controller="BookServiceCtrl as servicectrl">
+    <div class="row">
+        <h2>Borrow book</h2>
+        <hr/>
+        <div class="col-md-12" ng-show="books.length">
+            <form  role="form">
+                <div class="form-group">
+                    <input type="text" placeholder="Search" class="form-control" ng-model="searchquery">
+                </div>
+                <!--    <div class="form-group">
+                        <span>Return day</span>
+                        <div class='input-group date'>
+                            <input type='text' class="form-control" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                -->
+            </form>
+        </div>
+        <h3  ng-show="!books.length">No books left in library!</h3>
+    </div>
+    <div id="borrowbox" class="row" ng-show="book" >
+        <div class="col-md-4">
+            <form role="form" class="book-to-borrow">
+                <h3>Are you sure?</h3>
+                <hr/>
+                <p>Title: {{book.title}}</p>
+                <p>Author: {{book.author}}</p>
+                <p>ISBN: {{book.isbn}}</p>
+                <hr/>
+                <p>How long are you going to keep it?</p>
+                <div class="radio">
+                    <label><input type="radio" name="period" value="7"  ng-model="servicePeriod">7 days</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="period" value="14" ng-model="servicePeriod">2 weeks</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="period" value="60" ng-model="servicePeriod">2 months</label>
+                </div>
+                <button type="submit" class="btn btn-success" ng-click="servicectrl.confirmBorrowBook()">Confirm</button>
+                <button type="submit" class="btn btn-warning" ng-click="servicectrl.resign()">Resign</button>
+            </form>
+        </div>
+    </div>
+    <div class="row"  ng-show="books.length">
+        <div class="col-md-12">
+            <table class="table table-striped table-bordered table-hover">
+                <tr>
+                    <th>Title</th><th>Autor's name</th><th>ISBN</th>
+                </tr>
+                <tr ng-repeat="book in books | filter:searchquery | orderBy :'author'">
+                    <td>{{book.title}}</td><td>{{book.author}}</td><td>{{book.isbn}}<a class="btn btn-info btn-sm pull-right" href="" ng-click="servicectrl.borrowBook(book)" role="button">Borrow me!</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

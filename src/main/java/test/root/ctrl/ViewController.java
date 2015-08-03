@@ -28,33 +28,35 @@ public class ViewController {
     ServiceService serviceService;
 
 
-    @RequestMapping(value={"/", "/login"})  ModelAndView home() {
+    @RequestMapping(value={"/", "/login", "/book-editor", "/service-book", "/check-service", "/return-book"})  ModelAndView home() {
         ModelAndView model = new ModelAndView();
         model.setViewName("homeView");
 
         //userService.create(User.Role.USER,"Jakub", "Marciniak", "jakub", "dupa.8");
         if(userService.getUserByLogin("jakub")==null) userService.create(User.Role.USER,"Jakub", "Marciniak", "jakub", "dupa.8");;;
+        if(userService.getUserByLogin("filip1323")==null) userService.create(User.Role.USER,"Filip", "Lukomski", "filip1323", "password");;;
+
         return model;
     }
 
-    @RequestMapping(value={"/book-editor"})  ModelAndView bookEditor() {
-        ModelAndView model = new ModelAndView();
-        model.setViewName("editorView");
-        return model;
-    }
-    @RequestMapping(value={"/service-book"})  ModelAndView bookService() {
-        ModelAndView model = new ModelAndView();
-        model.setViewName("servicebookView");
-        return model;
-    }
-    @RequestMapping(value={"/check-service"})  ModelAndView checkService() {
-        ModelAndView model = new ModelAndView();
-        model.setViewName("checkserviceView");
-        return model;
-    }
-    @RequestMapping(value={"/return-book"})  ModelAndView returnBook() {
-        ModelAndView model = new ModelAndView();
-        model.setViewName("returnbookView");
-        return model;
-    }
+//    @RequestMapping(value={"/book-editor"})  ModelAndView bookEditor() {
+//        ModelAndView model = new ModelAndView();
+//        model.setViewName("editorView");
+//        return model;
+//    }
+//    @RequestMapping(value={"/service-book"})  ModelAndView bookService() {
+//        ModelAndView model = new ModelAndView();
+//        model.setViewName("servicebookView");
+//        return model;
+//    }
+//    @RequestMapping(value={"/check-service"})  ModelAndView checkService() {
+//        ModelAndView model = new ModelAndView();
+//        model.setViewName("checkserviceView");
+//        return model;
+//    }
+//    @RequestMapping(value={"/return-book"})  ModelAndView returnBook() {
+//        ModelAndView model = new ModelAndView();
+//        model.setViewName("returnbookView");
+//        return model;
+//    }
 }

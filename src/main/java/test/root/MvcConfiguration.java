@@ -36,6 +36,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/css/**").addResourceLocations("/resources/css/").setCachePeriod(31556926);
         registry.addResourceHandler("/img/**").addResourceLocations("/resources/img/").setCachePeriod(31556926);
         registry.addResourceHandler("/js/**").addResourceLocations("/resources/js/").setCachePeriod(31556926);
+        registry.addResourceHandler("/templates/**").addResourceLocations("/resources/templates/").setCachePeriod(31556926);
     }
 
     @Override
